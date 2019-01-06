@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="5.0" prefHeight="356.0" prefWidth="438.0" style="-fx-background-color: #6ad7fb; -fx-border-style: solid; -fx-border-width: 6px; -fx-border-color: #ffcc99;" vgap="60.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints maxHeight="55.0" minHeight="17.0" prefHeight="23.0" />
+      <RowConstraints maxHeight="40.0" minHeight="2.0" prefHeight="34.0" />
+   </rowConstraints>
+   <children>
+      <Button fx:id="clicker" alignment="TOP_CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#pressButton" style="-fx-background-color: #b3b3cc; -fx-background-radius: 50; -fx-background-position: absolute;" text="Click me" textAlignment="CENTER" textOverrun="CLIP" translateX="125.0" GridPane.rowIndex="1">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.3894230769230769">
+               <stops>
+                  <Stop color="#493a99" />
+                  <Stop color="#5f458270" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <TextField alignment="TOP_CENTER" prefHeight="15.0" prefWidth="333.0" text="Fast Clicker Game">
+         <font>
+            <Font name="Chalkboard" size="24.0" />
+         </font>
+      </TextField>
+   </children>
+</GridPane>

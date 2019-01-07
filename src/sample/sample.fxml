@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
@@ -9,30 +12,55 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<GridPane alignment="center" hgap="5.0" prefHeight="356.0" prefWidth="438.0" style="-fx-background-color: #6ad7fb; -fx-border-style: solid; -fx-border-width: 6px; -fx-border-color: #ffcc99;" vgap="60.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<GridPane alignment="center" hgap="5.0" prefHeight="356.0" prefWidth="438.0" style="-fx-background-color: #e6e6ff; -fx-border-style: solid; -fx-border-width: 6px; -fx-border-color: #ffcc99;" vgap="60.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <columnConstraints>
       <ColumnConstraints />
    </columnConstraints>
    <rowConstraints>
       <RowConstraints />
       <RowConstraints maxHeight="55.0" minHeight="17.0" prefHeight="23.0" />
+      <RowConstraints maxHeight="55.0" minHeight="17.0" prefHeight="23.0" />
       <RowConstraints maxHeight="40.0" minHeight="2.0" prefHeight="34.0" />
    </rowConstraints>
    <children>
-      <Button fx:id="clicker" alignment="TOP_CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#pressButton" style="-fx-background-color: #b3b3cc; -fx-background-radius: 50; -fx-background-position: absolute;" text="Click me" textAlignment="CENTER" textOverrun="CLIP" translateX="125.0" GridPane.rowIndex="1">
+      <ImageView fx:id="clicker" fitHeight="50.0" fitWidth="100.0" onMousePressed="#pressButton" onTouchPressed="#pressButton" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+         <image>
+            <Image url="@click.gif" />
+         </image>
+         <GridPane.margin>
+            <Insets left="90.0" />
+         </GridPane.margin>
+      </ImageView>
+      <Button fx:id="start" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#startGame" style="-fx-background-color: #ffd9b3;" text="START" GridPane.rowIndex="2">
          <textFill>
-            <LinearGradient endX="1.0" endY="1.0" startX="0.3894230769230769">
+            <LinearGradient endX="1.0" endY="1.0" startX="0.4941849816849817">
                <stops>
                   <Stop color="#493a99" />
-                  <Stop color="#5f458270" offset="1.0" />
+                  <Stop color="#972b2b" offset="1.0" />
                </stops>
             </LinearGradient>
          </textFill>
-      </Button>
-      <TextField alignment="TOP_CENTER" prefHeight="15.0" prefWidth="333.0" text="Fast Clicker Game">
          <font>
-            <Font name="Chalkboard" size="24.0" />
+            <Font name="Trebuchet MS" size="14.0" />
          </font>
-      </TextField>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="90.0" />
+         </GridPane.margin>
+      </Button>
+      <Label prefHeight="44.0" prefWidth="216.0" text="Click the Heart Game!">
+         <font>
+            <Font name="Trebuchet MS" size="18.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="25.0" />
+         </GridPane.margin></Label>
+      <Label fx:id="countDisplay" layoutX="136.0" layoutY="36.0" prefHeight="44.0" prefWidth="216.0" text="SCORE: " GridPane.rowIndex="3">
+         <font>
+            <Font name="Trebuchet MS" size="18.0" />
+         </font>
+      </Label>
    </children>
 </GridPane>

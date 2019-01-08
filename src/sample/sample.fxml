@@ -12,7 +12,7 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<GridPane alignment="center" hgap="5.0" prefHeight="356.0" prefWidth="438.0" style="-fx-background-color: #e6e6ff; -fx-border-style: solid; -fx-border-width: 6px; -fx-border-color: #ffcc99;" vgap="60.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<GridPane alignment="center" hgap="5.0" prefHeight="356.0" prefWidth="438.0" style="-fx-background-color: #e6e6ff; -fx-border-style: solid; -fx-border-width: 6px; -fx-border-color: #ffcc99;" vgap="60.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <columnConstraints>
       <ColumnConstraints />
    </columnConstraints>
@@ -28,7 +28,7 @@
             <Image url="@click.gif" />
          </image>
          <GridPane.margin>
-            <Insets left="90.0" />
+            <Insets left="105.0" />
          </GridPane.margin>
       </ImageView>
       <Button fx:id="start" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#startGame" style="-fx-background-color: #ffd9b3;" text="START" GridPane.rowIndex="2">
@@ -47,17 +47,17 @@
             <Insets />
          </opaqueInsets>
          <GridPane.margin>
-            <Insets left="90.0" />
+            <Insets left="105.0" />
          </GridPane.margin>
       </Button>
-      <Label prefHeight="44.0" prefWidth="216.0" text="Click the Heart Game!">
+      <Label prefHeight="44.0" prefWidth="216.0" text="    Click the Heart Game!">
          <font>
             <Font name="Trebuchet MS" size="18.0" />
          </font>
          <GridPane.margin>
             <Insets left="25.0" />
          </GridPane.margin></Label>
-      <Label fx:id="countDisplay" layoutX="136.0" layoutY="36.0" prefHeight="44.0" prefWidth="216.0" text="SCORE: " GridPane.rowIndex="3">
+      <Label fx:id="countDisplay" layoutX="136.0" layoutY="36.0" prefHeight="34.0" prefWidth="284.0" text="   SCORE: " GridPane.rowIndex="3">
          <font>
             <Font name="Trebuchet MS" size="18.0" />
          </font>

@@ -43,7 +43,7 @@ public class Controller {
                 start.setText(" Goo!");
                 Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(10), ev -> {
                     canPlay = false;
-                    countDisplay.setText("Your final score is " + counter);
+                    countDisplay.setText("  Your final score is " + counter + " BEST: " + highScore);
                     if (highScore < counter) {
                         highScore = counter;
                     }
@@ -57,7 +57,7 @@ public class Controller {
     {//increments the counter and updates the display
        if(canPlay) {
            counter++;
-           countDisplay.setText("SCORE: " + counter + " BEST: " + highScore);
+           countDisplay.setText("  SCORE: " + counter + " BEST: " + highScore);
        }
     }
 
